@@ -13,18 +13,25 @@
             background: #1e293b;
             padding: 20px;
             text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
         }
         section {
             padding: 30px;
+            animation: fadeIn 2s ease-in-out;
         }
         h1, h2 {
             color: #38bdf8;
         }
         .card {
-            background: #1e293b;
+            background: rgba(30, 41, 59, 0.7);
             padding: 15px;
             margin: 10px 0;
             border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
         }
         .btn {
             background: #38bdf8;
@@ -33,43 +40,21 @@
             text-decoration: none;
             border-radius: 5px;
         }
-        .card {
-    background: rgba(30, 41, 59, 0.7);
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-}
-
-.card:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: white;
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-header {
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-section {
-    animation: fadeIn 2s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        .btn:hover {
+            background: white;
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -80,36 +65,49 @@ section {
 </header>
 
 <section>
+
     <h2>About Me</h2>
     <div class="card">
-        <p>I am a passionate developer interested in building smart applications and solving real-world problems.</p>
+        <p>
+        I am a highly motivated and enthusiastic 3rd year student with a strong interest in software development and emerging technologies. 
+        I enjoy building real-world applications that solve practical problems and improve user experience. 
+        I am always eager to learn new tools and technologies to enhance my skills. 
+        I am passionate about continuous improvement and aim to contribute effectively in a professional environment.
+        </p>
     </div>
 
     <h2>Skills</h2>
     <div class="card">
-        <p>HTML, CSS, JavaScript, Python, DBMS</p>
+        <p>Python, Java, GitHub, Power BI, Excel</p>
     </div>
 
     <h2>Projects</h2>
     <div class="card">
-    <p><b>Bad Comments Blocker</b> - Detects and blocks toxic comments using AI.</p>
-    <p><b>Arduino Smart LED</b> - Controls LED based on light intensity.</p>
-</div>
+        <p><b>Community-Based Private Parking Space Sharing System</b></p>
+        <p>
+        Developed a web-based platform that connects parking space owners with drivers looking for available parking slots. 
+        Users can search nearby parking spaces and book them in advance, while owners can register and update availability easily. 
+        OTP-based verification ensures secure booking. 
+        This system helps reduce traffic congestion and efficiently utilizes unused private parking spaces.
+        </p>
+    </div>
+
     <h2>Why Hire Me?</h2>
-<div class="card">
-    <p>I am a quick learner, passionate developer, and I love solving real-world problems. I am always ready to learn new technologies and contribute effectively to a team.</p>
-</div>
     <div class="card">
-        <p><b>Bad Comments Blocker</b> - Detects and blocks toxic comments using AI.</p>
-        <p><b>Arduino Smart LED</b> - Controls LED based on light intensity.</p>
+        <p>
+        I am a quick learner with a strong problem-solving mindset and a passion for technology. 
+        I adapt quickly to new environments and work efficiently both independently and in teams. 
+        I am committed to delivering quality work and continuously improving my skills.
+        </p>
     </div>
 
     <h2>Contact</h2>
-<div class="card">
-    <p>Email: yourmail@gmail.com</p>
-    <a href="www.linkedin.com/in/gokulalakshmi-r-498275341" class="btn">LinkedIn</a>
-    <a href="GOKULALAKSHMI RESUME.pdf" class="btn">Download Resume</a>
-</div>
+    <div class="card">
+        <p>Email: rgokulalakshmi07@gmail.com</p>
+        <a href="https://www.linkedin.com/in/gokulalakshmi-r-498275341" class="btn">LinkedIn</a>
+        <a href="GOKULALAKSHMI RESUME.pdf" class="btn">Download Resume</a>
+    </div>
+
 </section>
 
 </body>
